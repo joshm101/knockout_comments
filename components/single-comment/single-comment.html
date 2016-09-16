@@ -1,4 +1,24 @@
-<template id="single-comment-template">
-   <div>Hello single comment</div>
-   gfds
-</template>
+<link rel="stylesheet" type="text/css" href="../single-comment/css/singleComment.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+<div class="single-comment-content-wrap">
+   <div class="comment-score">
+      <h1 data-bind="if: score() > 0">+<span data-bind="text: score"></span></h1>
+      <h1 data-bind="if: score() < 0"><span data-bind="text: score"></span></h1>
+   </div>
+   <div class="single-comment-username">
+      <h3 data-bind="text: username"></h3>
+   </div>
+   <div data-bind="text: date"></div>
+   <div class="comment-text" data-bind="text: commentText"></div>
+   <div class="voting-wrap">
+      <a href="" data-bind="click: upvote">
+         <i class="material-icons">keyboard_arrow_up</i>
+      </a>
+      <a href="" data-bind="click: downvote">
+         <i class="material-icons">keyboard_arrow_down</i>
+      </a>   
+   </div>
+</div>

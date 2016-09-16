@@ -1,0 +1,33 @@
+.single-comment-username h3 {
+   margin-top: 0px !important;
+   margin-bottom: 0px !important;
+}
+
+.single-comment-content-wrap a{
+   text-decoration: none;
+   color: black;
+}
+
+.comment-text {
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.comment-score {
+   display: inline-block;
+   float: right;
+}
+
+.comment-score h1 {
+   margin: 0 !important;
+}
+
+.voting-wrap a:hover {
+   text-shadow: black 0 2px 0.2em;
+}
+
+.voting-wrap {
+   
+   height: 25px;
+   padding-bottom: 20px;
+}
